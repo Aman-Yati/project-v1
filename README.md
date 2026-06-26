@@ -1,36 +1,197 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+```md
+# 🐝 JobHive
 
-## Getting Started
+A modern job application tracking platform built with **Next.js**, **TypeScript**, **Tailwind CSS**, **Prisma**, and **Supabase**.
 
-First, run the development server:
+JobHive helps job seekers organize and manage their job search by tracking applications, interviews, offers, and saved opportunities through a clean and intuitive dashboard.
+
+---
+
+## ✨ Features
+
+- 🔐 Secure Authentication
+- 📊 Interactive Dashboard
+- 💼 Job Application Management
+- 📋 Kanban Board (Drag & Drop)
+- 📈 Analytics & Insights
+- ⭐ Save Jobs
+- 🔍 Search, Filter & Sort Applications
+- 👤 User Profile Management
+- 🌙 Dark / Light Mode
+- 📱 Fully Responsive Design
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS
+- shadcn/ui
+- Framer Motion
+- Lucide React
+- Recharts
+
+### Backend
+
+- Next.js Server Actions
+- Prisma ORM
+- PostgreSQL (Supabase)
+
+### Deployment
+
+- Vercel
+
+---
+
+## 📂 Project Structure
+
+```
+
+src
+├── app
+├── components
+├── lib
+├── hooks
+├── actions
+├── providers
+├── types
+├── utils
+└── prisma
+
+public
+
+````
+
+---
+
+## 🚀 Getting Started
+
+Clone the repository.
+
+```bash
+git clone https://github.com/yourusername/jobhive.git
+````
+
+Move into the project.
+
+```bash
+cd jobhive
+```
+
+Install dependencies.
+
+```bash
+npm install
+```
+
+Create a `.env` file in the project root.
+
+```env
+DATABASE_URL="your_database_url"
+```
+
+Generate the Prisma client.
+
+```bash
+npx prisma generate
+```
+
+Run database migrations.
+
+```bash
+npx prisma migrate dev
+```
+
+Start the development server.
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser and visit:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🗄 Database
 
-To learn more about Next.js, take a look at the following resources:
+JobHive uses:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* PostgreSQL
+* Prisma ORM
+* Supabase
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+After updating the Prisma schema, run:
 
-## Deploy on Vercel
+```bash
+npx prisma migrate dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Generate the client:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npx prisma generate
+```
+
+---
+
+## 🚀 Deployment
+
+JobHive is deployed using **Vercel**.
+
+Every push to the `main` branch automatically triggers a new deployment.
+
+---
+
+## 📌 Roadmap
+
+* [x] Project Setup
+* [ ] Landing Page
+* [ ] Authentication
+* [ ] Dashboard
+* [ ] Applications CRUD
+* [ ] Kanban Board
+* [ ] Saved Jobs
+* [ ] Analytics
+* [ ] User Profile
+* [ ] Notifications
+* [ ] Resume Upload
+* [ ] Email Reminders
+* [ ] AI Resume Review
+* [ ] AI Cover Letter Generator
+
+---
+
+## 📸 Screenshots
+
+Coming soon.
+
+---
+
+## 🤝 Contributing
+
+Contributions, suggestions, and improvements are welcome.
+
+Feel free to fork the repository and submit a pull request.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 👨‍💻 Author
+
+Built with ❤️ using Next.js and TypeScript.
+
+```
+```
