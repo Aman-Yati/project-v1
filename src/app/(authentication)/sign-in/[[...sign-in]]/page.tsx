@@ -1,6 +1,6 @@
 import React from 'react'
 import { SignIn } from '@clerk/nextjs'
-import { dark, neobrutalism } from '@clerk/ui/themes'
+import {neobrutalism } from '@clerk/ui/themes'
 
 const SignInPage = () => {
   const clerkAppearance = {

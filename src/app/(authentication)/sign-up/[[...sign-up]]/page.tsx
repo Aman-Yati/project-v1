@@ -1,5 +1,5 @@
 import React from 'react'
-import { dark, neobrutalism } from '@clerk/ui/themes'
+import { neobrutalism } from '@clerk/ui/themes'
 import { SignUp } from '@clerk/nextjs'
 
 const clerkAppearance = {
