@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-// import Logo from "./logo";
+import Logo from "./logo";
 
 export default function Header() {
   const pathname = usePathname();
@@ -17,7 +17,7 @@ export default function Header() {
         <div className="relative flex h-14 items-center justify-between gap-3 overflow-hidden rounded-2xl border border-gray-800/50 bg-gray-900/90 px-3 backdrop-blur-sm shadow-[inset_0_0_0_1px_rgba(255,255,255,0.05)]">
           {/* Site branding */}
           <div className="flex flex-1 items-center">
-            Logo
+            <Logo />
           </div>
 
           {/* Desktop sign in links */}
