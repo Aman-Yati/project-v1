@@ -1,15 +1,17 @@
+'use client'
 import React from 'react'
+import {motion} from 'motion/react'
+import { neobrutalism } from '@clerk/ui/themes'
 import { SignIn } from '@clerk/nextjs'
-import {neobrutalism } from '@clerk/ui/themes'
+
+const clerkAppearance = {
+  theme: [neobrutalism],
+  variables: {
+    colorPrimary: '#8B5CF6',
+  },
+}
 
 const SignInPage = () => {
-  const clerkAppearance = {
-    theme: [neobrutalism],
-    variables: {
-      colorPrimary: '#8B5CF6',
-    },
-  }
-
   return (
     <div className="relative min-h-screen w-full bg-slate-950 text-slate-100">
       <div
@@ -19,12 +21,16 @@ const SignInPage = () => {
           filter: 'saturate(1.1) contrast(1.1)',
         }}
       />
-      <div className="relative flex min-h-screen items-center justify-center px-4 sm:px-6">
-          <SignIn appearance={clerkAppearance} />
-        </div>
-      </div>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.45 , ease: 'easeIn'}}
+        className="relative flex min-h-screen items-center justify-center px-4"
+      >
+        <SignIn appearance={clerkAppearance} />
+      </motion.div>
+    </div>
   )
 }
-
 
 export default SignInPage

@@ -1,4 +1,6 @@
+'use client'
 import React from 'react'
+import {motion} from 'motion/react'
 import { neobrutalism } from '@clerk/ui/themes'
 import { SignUp } from '@clerk/nextjs'
 
@@ -19,9 +21,14 @@ const SignUpPage = () => {
           filter: 'saturate(1.1) contrast(1.1)',
         }}
       />
-      <div className="relative flex min-h-screen items-center justify-center px-4">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.45 , ease: 'easeIn'}}
+        className="relative flex min-h-screen items-center justify-center px-4"
+      >
         <SignUp appearance={clerkAppearance} />
-      </div>
+      </motion.div>
     </div>
   )
 }
